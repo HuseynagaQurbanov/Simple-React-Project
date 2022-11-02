@@ -7,14 +7,14 @@ const App = () => {
     return (
                 <div className="container">
                     <div className="card-group">
-                        <Collapse>
+                        <Collapse id="first">
                             <Card cardTitle="Elbey"
                                 cardDesc="UI/UX Designer"
                                 lastUpdatedTime="Last updated 37 mins ago"
                                 cardImage="https://picsum.photos/id/1/200/300"/>
                         </Collapse>
                         
-                        <Collapse>
+                        <Collapse id="second">
                             <Card cardTitle="Ferid"
                                 cardDesc="Director"
                                 lastUpdatedTime="Last updated 5 hours ago"
@@ -22,7 +22,7 @@ const App = () => {
                         </Collapse>
                         
 
-                        <Collapse>
+                        <Collapse id="third">
                             <Card cardTitle="Huseyn"
                                 cardDesc="Front End Developer"
                                 lastUpdatedTime="Last updated 2 mins ago"
