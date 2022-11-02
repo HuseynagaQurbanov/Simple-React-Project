@@ -1,25 +1,28 @@
 import React from "react";
-import Card from "./Card";
 
-const Collapse = (p) => {
-  return (
-    <div>
-      <a
-        className="btn btn-primary"
-        data-toggle="collapse"
-        href={"#" + p.id}
-        role="button"
-        aria-expanded="false"
-        aria-controls="collapseExample"
-        style={{display: "block" , width:"202px", margin:"3px"}}
-      >
-        Link with href
-      </a>
-      <div className="collapse" id={p.id}>
-        {p.children}
+class Collapse extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      content: false,
+    };
+  }
+
+  showContent = () => {
+    this.setState({content: !this.state.content})
+  }
+
+  render() {
+    return (
+      <div>
+        <button className="btn btn-primary w-100" onClick={this.showContent}>Collapse</button>
+
+        {this.state.content ? (
+          <div className="collapse show">{this.props.children}</div>
+        ) : null}
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default Collapse;
