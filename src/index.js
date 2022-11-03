@@ -9,16 +9,17 @@ const App = () => {
       <div className="container">
         <div className="row">
           <div className="card-group">
-            <div className="col-3">
+            <div className="col-2">
               <Collapse id="first">
                 <Card
+                  cardTitle="Elbey"
                   cardDesc="UI/UX Designer"
                   updatedTime="12 hours ago online"
                   cardImg="https://picsum.photos/id/1/200/300"
                 />
               </Collapse>
             </div>
-            <div className="col-3">
+            <div className="col-2">
               <Collapse id="second">
                 <Card
                   cardTitle="Ferid"
@@ -28,13 +29,13 @@ const App = () => {
                 />
               </Collapse>
             </div>
-            <div className="col-3">
+            <div className="col-2">
               <Collapse id="third">
                 <Card
                   cardTitle="Huseyn"
                   cardDesc="Front End Developer"
                   updatedTime="23 min ago online"
-                  cardImg="https://picsum.photos/id/100/200/300"
+                  cardImg="https://picsum.photos/id/1000/200/300"
                 />
               </Collapse>
             </div>
